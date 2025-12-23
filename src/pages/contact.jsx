@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <motion.section
-      className="min-h-screen bg-gradient-to-b from-black/95 to-black/70 pt-32 pb-20"
+      className="min-h-screen bg-gradient-to-b from-black/95 to-blue-900 pt-32 pb-20"
       initial={{ opacity: 0, y: 60 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}

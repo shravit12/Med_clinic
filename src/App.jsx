@@ -5,6 +5,7 @@ import Services from "./components/Services";
 import Contact from "./pages/contact";
 import About from "./components/About";
 import Footer from './components/Footer'
+import Testimonial from './components/Testimonial.jsx'
 
 function App() {
   return (
@@ -18,12 +19,14 @@ function App() {
               <Hero />
               <Services />
               <About/>
+              <Testimonial/>
               <Footer/>
             </>
           }
         />
         
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<><Contact />
+            <Footer/></>} />
       </Routes>
     </Router>
   );
